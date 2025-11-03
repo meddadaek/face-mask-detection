@@ -77,5 +77,11 @@ Push the branch and open a Pull Request
 This project is open source under the MIT License.
 Feel free to use, modify, and share it — but please give credit where due. 💙
 
----
+
+
 ⚡ "Deep Learning is not about coding — it’s about teaching machines how to see and understand."
+
+##SOME OF THE OUTPUT
+
+---<img width="403" height="598" alt="Screenshot 2025-11-03 165503" src="https://github.com/user-attachments/assets/dc64dac0-ed50-48fc-8ef5-eebf7bae577b" />
+<img width="597" height="581" alt="Screenshot 2025-11-03 165557" src="https://github.com/user-attachments/assets/f0343a23-3709-44e9-87e3-cd9bb8c2ee27" />
