@@ -53,3 +53,28 @@ cd face-mask-detection
 
 2️⃣ Install dependencies
 pip install -r requirements.txt
+🧑‍💻 Author
+
+Doro Kanji
+💼 AI & Deep Learning Enthusiast
+🐙 GitHub: meddadaek
+
+⭐ Contribute
+
+Contributions are welcome!
+If you’d like to improve this project:
+
+Fork the repository
+
+Create a new branch (feature/new-feature)
+
+Commit your changes
+
+Push the branch and open a Pull Request
+
+🏁 License
+
+This project is open source under the MIT License.
+Feel free to use, modify, and share it — but please give credit where due. 💙
+
+⚡ "Deep Learning is not about coding — it’s about teaching machines how to see and understand."
