@@ -23,3 +23,33 @@ The trained model can later be integrated into real-time systems such as webcam 
 The dataset used in this project is the **Face Mask Dataset** (available on Kaggle or other public sources).
 
 ### Structure:
+data/
+│
+├── with_mask/
+│ ├── with_mask_1.jpg
+│ ├── with_mask_2.jpg
+│ └── ...
+│
+└── without_mask/
+├── without_mask_1.jpg
+├── without_mask_2.jpg
+└── ...
+
+
+- **With Mask:** 3725 images  
+- **Without Mask:** 3828 images  
+- **Total:** 7553 images
+
+All images were resized, normalized, and split into training and validation sets during preprocessing.
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/meddadaek/face-mask-detection.git
+cd face-mask-detection
+
+2️⃣ Install dependencies
+pip install -r requirements.txt
