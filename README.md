@@ -15,7 +15,7 @@ This project aims to automatically classify facial images into two categories:
 
 Using Convolutional Neural Networks (CNNs), the model learns to identify subtle differences in facial features between masked and unmasked faces.  
 The trained model can later be integrated into real-time systems such as webcam apps or surveillance tools.
-you can find it in my ##kaggle notbook her:
+you can find it in my kaggle notebook her:
   https://www.kaggle.com/code/aekmeddad/face-mask-dataset/notebook
 
 ---
