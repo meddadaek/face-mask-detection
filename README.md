@@ -77,4 +77,58 @@ Push the branch and open a Pull Request
 This project is open source under the MIT License.
 Feel free to use, modify, and share it — but please give credit where due. 💙
 
+---
+
+### 🧩 Visualization (Matplotlib)
+
+Each prediction will show the image with a title containing the prediction and confidence percentage:
+
+| Example 1 | Example 2 |
+|:----------:|:----------:|
+| ![Example 1](https://i.imgur.com/fZBzM8m.png) | ![Example 2](https://i.imgur.com/lnHxH1V.png) |
+| 😷 **WITH MASK (98.45%)** | 😶 **WITHOUT MASK (97.83%)** |
+
+*(These are sample images — replace them with your own results from your notebook or screenshots.)*
+
+---
+
+### 🧠 Model Behavior Summary
+
+- ✅ Correctly predicts most clear frontal images.  
+- ⚠️ Slightly less confident on angled faces or poor lighting.  
+- 📈 Improves significantly with data augmentation and regularization.  
+
+---
+
+### 🎯 Example of Random Image Prediction Script
+
+```python
+import random, os
+from tensorflow.keras.preprocessing import image
+import numpy as np
+import matplotlib.pyplot as plt
+
+folders = [
+    '/kaggle/input/face-mask-dataset/data/with_mask',
+    '/kaggle/input/face-mask-dataset/data/without_mask'
+]
+
+folder = random.choice(folders)
+img_file = random.choice(os.listdir(folder))
+img_path = os.path.join(folder, img_file)
+
+img = image.load_img(img_path, target_size=(128,128))
+img_array = image.img_to_array(img) / 255.0
+img_array = np.expand_dims(img_array, axis=0)
+
+prediction = model.predict(img_array)
+label = "😷 WITH MASK" if prediction[0][0] > 0.5 else "😶 WITHOUT MASK"
+confidence = prediction[0][0]*100 if prediction[0][0]>0.5 else (1-prediction[0][0])*100
+
+plt.imshow(image.load_img(img_path))
+plt.title(f"{label} ({confidence:.2f}%)")
+plt.axis('off')
+plt.show()
+
+
 ⚡ "Deep Learning is not about coding — it’s about teaching machines how to see and understand."
